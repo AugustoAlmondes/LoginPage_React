@@ -1,0 +1,119 @@
+:root
+{
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --color2: rgba(187, 128, 80, 0.2);
+    --color3: rgba(240, 172, 117, 0.6);
+    --color31: rgb(255, 153, 0);
+    --color4:rgb(211, 204, 204);
+}
+
+.container
+{
+    width: 450px;
+    font-family:Arial, Helvetica, sans-serif;
+    /* background-color: rgba(255, 255, 255, .15); */
+    background-color: var(--color2);
+    backdrop-filter: blur(10px);
+    /* border: 2px solid rgba(255, 255, 255, .15); */
+    border: var(--color2);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0 0 20px var(--black);
+    /* color: var(--color4); */
+    color: var(--white);
+}
+
+.container .input-field
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px auto;
+}
+
+.input-field input{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 44, 23, 0.596);
+    /* border: 2px solid var(--color3); */
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: var(--color4);
+    padding: 20px 25px;
+}
+
+.input-field input::placeholder
+{
+    color: var(--color4);
+}
+
+.input-field .icon{
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--color4);
+}
+
+.container .recall-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -15px 0 15px;
+}
+
+.recall-forget label{
+    color: var(--color4);
+}
+
+.recall-forget input{
+    margin-right: 5px;
+}
+
+.recall-forget a, .signup-link p a{
+    color: var(--color31);
+    font-weight: bold;
+    transition: .2s;
+    
+}
+.recall-forget a:hover, .signup-link p a:hover{
+    color: var(--white);
+}
+/* BOTÃO ENTRAR */
+.container button{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(212, 136, 36);
+    /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.555); */
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: none;
+    transition: .2s;
+}
+
+.container button:hover{
+    background-color: rgb(255, 191, 106);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.555);
+    /* color: rgb(212, 136, 36); */
+}
+
+.container .signup-link{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
